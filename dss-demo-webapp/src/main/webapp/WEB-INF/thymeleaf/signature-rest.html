@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout.html}" th:with="currentPage=#{label.rest.soap.webservices}">
+	<body>		
+		<div layout:fragment="content">
+            <p>
+                Los siguientes servicios web son accesibles mediante APIs (Interfaz de Programación de Aplicaciones) todas siguiendo desde la versión 5.6 las <a href="https://www.openapis.org/" target="_blank">Especificaciones de OpenAPI</a>. A demás, ocultan la complejidad de la firma (CAdES, PAdES, XAdES, ASiC) proporcionando una integración más sencilla.
+			</p>
+			<p>Funciones disponibles:</p>
+            <ul>
+            	<li>Firma
+	            	<ul>
+		                <li>Calcular la función hash de la información a firmar (getDataToSign);</li>
+		                <li>Incorporar la firma digital al documento final (signDocument);</li>
+		                <li>Extender una firma existente;</li>
+		                <li>Validar una firma;</li>
+		                <li>Generar un sello de tiempo.</li>
+	            	</ul>
+            	</li>
+            	<li>Firmado del servidor
+	            	<ul>
+	            		<li>Obtención de las claves de un token;</li>
+	            		<li>Obtención de las claves de un token;</li>
+	            		<li>Firmar la información con una clave usando un alias;</li>
+	            		<li>Firmar la función hash con una clave usando un alias.</li>
+	            	</ul>
+            	</li>
+            	<li>Validación de documentos
+	            	<ul>
+	            		<li>Valida un documento (firmado o con sello de tiempo);</li>
+	            		<li>Recuperar un documento firmado original.</li>
+	            	</ul>
+            	</li>
+            	<li>Validación de certificados
+	            	<ul>
+	            		<li>Validar un certificado.</li>
+	            	</ul>
+	            </li>
+            	<li>Sello de tiempo remoto
+	            	<ul>
+	            		<li>Marcar temporalmente un valor hash.</li>
+	            	</ul>
+            	</li>
+            </ul>
+			<p>Mas información: <a th:href="@{/services/}" title="Servicios web de firma REST/SOAP" target="_blank">Servicios web de firma REST/SOAP</a></p>
+            </div>
+		
+	</body>
+</html>

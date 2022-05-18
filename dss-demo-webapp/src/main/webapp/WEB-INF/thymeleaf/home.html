@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout.html}" th:with="currentPage=#{label.dss}">
+	<body>		
+		<div layout:fragment="content">
+            <p>Esta es la aplicación web de firma digital de Cartif.</p>
+            <h3>Funcionalidades</h3>
+			<p>En la actualidad, la aplicación posee las siguientes funcionalidades:</p>
+            <ul>
+            	<li>Firma de documento(s) en diversos formatos (XAdES, CAdES, PAdES, JAdES and ASiC-S/ASiC-E);</li>
+            	<li>Firma de función hash;</li>
+            	<li>Firma de documentos PDF;</li>
+            	<li>Extensión de firma;</li>
+            	<li>Marcado temporal de documentos;</li>
+            	<li>Validación de documentos (firma y marca de tiempo);</li>
+            	<li>Validación de certificados;</li>
+            	<li>Obtención de tokens (para validación de documentos);</li>
+            	<li>Validación de datos de diagnóstico;</li>
+            	<li>Resumen EU LOTL;</li>
+            	<li>Certificados de confianza <abbr title="Official Journal">OJ</abbr>;</li>
+            	<li>Aplicación Java independiente;</li>
+            	<li>Servicios web REST/SOAP.</li>
+            </ul>
+			<p>Por favor, consulte el manual de usuario, accesible desde la sección de "Documentación" en el menu situado a la izquierda.</p>	
+		</div>
+		
+	</body>
+</html>

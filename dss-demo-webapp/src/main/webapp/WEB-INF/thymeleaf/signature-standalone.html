@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout.html}" th:with="currentPage=#{label.standalone.application}">
+	<body>		
+		<div layout:fragment="content">            
+            <p>Descarga la aplicación independiente (Windows x64)</p>
+
+           	<ul>
+               	<li><a th:href="@{/downloads/dss-app-minimal-windows-x64.zip}" title="e-signature standalone">ZIP mínimo</a> (aplicación + lanzador (.bat) (dependencias necesarias))</li>
+           		<li><a th:href="@{/downloads/dss-app-complete-windows-x64.zip}" title="e-signature standalone">ZIP completo</a> (aplicación + lanzador (.bat) + <a href="https://adoptopenjdk.net/">OpenJDK</a> + <a href="https://gluonhq.com/products/javafx/">JavaFX SDK</a>)</li>
+           	</ul>
+
+            <div class="card">
+                <div class="card-header">Mas información...</div>
+                <div class="card-body collapse in">
+                    <p>Esto es una aplicación JavaFX independiente.</p>
+                    <p>La aplicación se conecta directamente a la infraestructura de la CA (Autoridad Certificadora) para recuperar información como CRL, OCSP, certificados de AIA...</p>
+                    <p>Todo las funciónes estan embebidas en la aplicación, haciendola totalmente independiente de esta aplicación web.</p>
+                    <p>Existen dos versiónes disponibles:</p>
+                    <ul>
+                        <li>ZIP mínimo: Posee únicamente la aplicación y el lanzador, el siguiente software debe estar previamente instalado en el dispositivo:</li>
+                        <ul>
+                            <li>OpenJDK</li>
+                            <li>JavaFX</li>
+                        </ul>   
+                        <li>ZIP completo: Incluye todo lo necesario dentro para el correcto funcionamiento de la aplicación.</li>  
+                    </ul>
+                    <div class="col-sm-12">
+                        <a th:href="@{/images/standalone-application.png}" class="thumbnail" target="_blank">
+                            <img th:src="@{/images/standalone-application.png}" alt="Standalone application" class="img-fluid" />
+                        </a>
+                    </div>
+                    <p>Por favor, consulte el apartado "Aplicación independiente" del manual de usuario.</p>
+                </div>
+            </div>
+		</div>
+		<div layout:fragment="scripts">
+    		<script type="text/javascript">
+				$('.collapse').collapse();
+			</script>
+		</div>
+	</body>
+</html>
