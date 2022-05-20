@@ -88,7 +88,7 @@
 		
 		<HBox styleClass="hbox-style">
 			<children>
-				<Label styleClass="label-style" text="Signature token API" />
+				<Label styleClass="label-style" text="Certificado para firma" />
 				<fx:define>
 				  <ToggleGroup fx:id="toggleSigToken" />  
 				</fx:define>
@@ -103,8 +103,8 @@
 		
 		<HBox fx:id="hPkcsFile" styleClass="hbox-style" visible="false">
 			<children>
-				<Label fx:id="labelPkcs11File" styleClass="label-style" text="PKCS #11 library" />
-				<Label fx:id="labelPkcs12File" styleClass="label-style" text="Keystore file" />
+				<Label fx:id="labelPkcs11File" styleClass="label-style" text="Librería PKCS #11" />
+				<Label fx:id="labelPkcs12File" styleClass="label-style" text="Fichero de clave" />
 				<Button fx:id="pkcsFileButton" mnemonicParsing="false" text="Seleccionar fichero..." />
 			</children>
 		</HBox>

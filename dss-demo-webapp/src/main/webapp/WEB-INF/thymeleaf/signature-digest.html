@@ -2,9 +2,9 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout.html}" th:with="currentPage=#{label.signADigest}">
 	<body>		
 		<div layout:fragment="content">
-			<div th:replace="fragment/disclaimer-mock-tsp::mock-tsp-warn"></div>
+			<!--<div th:replace="fragment/disclaimer-mock-tsp::mock-tsp-warn"></div>¡-->
               
-            <!--<form id="digest-sign-form" method="post" th:action="@{/sign-a-digest}" th:object="${signatureDigestForm}">¡-->
+            <form id="digest-sign-form" method="post" th:action="@{/sign-a-digest}" th:object="${signatureDigestForm}">
 
                 <input type="hidden" id="process" value="DIGEST_SIGN" />
 
