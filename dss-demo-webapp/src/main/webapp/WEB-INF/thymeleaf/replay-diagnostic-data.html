@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout.html}" th:with="currentPage='Replay Diagnostic Data'">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout.html}" th:with="currentPage=#{label.replay.diag}">
 	<body>		
 		<div layout:fragment="content">
            <form method="post" enctype="multipart/form-data" th:action="@{/replay-diagnostic-data}" th:object="${replayDiagForm}">
