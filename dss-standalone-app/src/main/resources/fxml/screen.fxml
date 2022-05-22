@@ -40,7 +40,7 @@
 		
 		<HBox styleClass="hbox-style">
 			<children>
-				<Label styleClass="label-style" text="Formato de firma" />
+				<Label styleClass="label-style" text="Estructura de firma" />
 				<fx:define>
 				  <ToggleGroup fx:id="toogleSigFormat" />  
 				</fx:define>
@@ -56,15 +56,15 @@
 		
 		<HBox fx:id="hSignaturePackaging" styleClass="hbox-style">
 			<children>
-				<Label styleClass="label-style" text="Embalaje" />
+				<Label styleClass="label-style" text="Empaquetado" />
 				<fx:define>
 				  <ToggleGroup fx:id="toggleSigPackaging" />  
 				</fx:define>
-				<RadioButton fx:id="envelopedRadio" disable="true" mnemonicParsing="false" text="Envuelta">
+				<RadioButton fx:id="envelopedRadio" disable="true" mnemonicParsing="false" text="Integrada">
                <toggleGroup>
                   <ToggleGroup fx:id="toggleSigPackaging" />
                </toggleGroup></RadioButton>
-				<RadioButton fx:id="envelopingRadio" disable="true" mnemonicParsing="false" text="Envolvente" toggleGroup="$toggleSigPackaging" />
+				<RadioButton fx:id="envelopingRadio" disable="true" mnemonicParsing="false" text="Integrante" toggleGroup="$toggleSigPackaging" />
 				<RadioButton fx:id="detachedRadio" disable="true" mnemonicParsing="false" text="Separada" toggleGroup="$toggleSigPackaging" />
 				<RadioButton fx:id="internallyDetachedRadio" disable="true" mnemonicParsing="false" text="Internamente separada" toggleGroup="$toggleSigPackaging" />
 			</children>
